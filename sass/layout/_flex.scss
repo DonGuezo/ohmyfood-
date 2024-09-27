@@ -1,0 +1,21 @@
+
+.dispFlex{
+    display: flex;
+}
+.justyCenter{
+    justify-content: center;
+}
+.alignCenter{
+    align-items: center;
+}
+.displayFlexFullCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flowColumn{
+    flex-flow: column;
+}
+.flowWrap{
+    flex-wrap: wrap;
+}

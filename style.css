@@ -307,8 +307,175 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Roboto";
+}
+
+.button-ohMy {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border: none;
+  color: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 20em;
+}
+.button-ohMy:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #FF79DA;
+}
+.button-ohMy:active {
+  box-shadow: 0 0.3em 1em -0.5em #FF79DA;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
 .head {
-  background-color: #99E2D0;
+  background-color: white;
+}
+
+.head-logo {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.head-localisation {
+  height: 50px;
+  background-color: #EAEAEA;
+  gap: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.head-conteneur {
+  padding: 20px 0 30px 0;
+}
+
+.head__title {
+  width: 275px;
+  height: 70px;
+}
+
+.head__info {
+  width: 315px;
+  text-align: center;
+}
+
+.head__button {
+  height: 50px;
+  text-align: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100vw {
+  width: 100vw;
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.dispFlex {
+  display: flex;
+}
+
+.justyCenter {
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.displayFlexFullCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flowColumn {
+  flex-flow: column;
+}
+
+.flowWrap {
+  flex-wrap: wrap;
+}
+
+nav {
+  background-color: white;
+  padding: 25px;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav__item {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__prepend {
+  margin: 0 0 0 -10px;
+  padding: 5px 7px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+}
+
+figure {
+  margin: 0;
+}
+
+.main__conteneur {
+  margin: 20px;
+}
+
+.card {
+  height: 250px;
+  display: flex;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .footer {
+  background-color: #353535;
+  padding: 20px;
+}
+footer .footer ol {
+  padding: 0;
+}
+footer .footer li {
+  list-style: none;
+}
+footer .footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer i {
+  padding: 0 10px 0 0;
+}
+
+.handshakeTransform {
+  transform: rotateZ(-45deg);
 }
 
 /*# sourceMappingURL=style.css.map */

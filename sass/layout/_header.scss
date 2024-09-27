@@ -1,5 +1,42 @@
-@import "../sass-utils/variables";
+body{
+    background-color: $lightBgColor;
+}
 
 .head{
-    background-color: $greenLightColor;
+    background-color: white;
 }
+
+.head-logo{
+    width: 200px;
+    margin: 20px 0;
+    
+}
+
+.head-localisation{
+    height: 50px;
+    background-color: $strongBgColor;
+    gap: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.head-conteneur{
+    padding: 20px 0 30px 0;
+}
+.head__title{
+    width: 275px;
+    height: 70px;
+}
+.head__info{
+    width: 315px;
+    text-align: center;
+}
+.head__button{
+  
+    height: 50px;
+    text-align: center;
+}
+
+
+
+
+

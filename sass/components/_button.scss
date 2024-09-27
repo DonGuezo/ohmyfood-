@@ -1,0 +1,18 @@
+.button-ohMy {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border-radius: 20em;
+    
+      &:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em $purpleLightColor;
+  }
+  
+      &:active {
+          box-shadow: 0 0.3em 1em -0.5em $purpleLightColor;
+        }
+  }

@@ -27,57 +27,59 @@
 
 <body>
     <header>
-        <div class="head">
+        <div class="head dispFlex alignCenter flowColumn">
             <div class="head-logo">
-                <img src="assets/images/logo/ohmyfood.png" alt="ohmyfood gros logo">
+                <img class="w100" src="assets/images/logo/ohmyfood.png" alt="ohmyfood gros logo">
             </div>
-            <div class="head-localisation">
+            <div class="head-localisation w100 displayFlexFullCenter">
                 <div class="head-localisation__icone"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="head-localisation__ville">Paris, Belleville</div>
             </div>
         </div>
-        <div class="head-conteneur">
-            <div class="head__title">
+        <div class="head-conteneur dispFlex alignCenter flowColumn">
+            <div class="head__title h100">
                 <h1>Réservez le menu qui vous convient</h1>
             </div>
             <div class="head__info">
-                <h2>Découvrez des restaurants d'exception sélectionnés par nos soins.</h2>
+                <p>Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
             </div>
             <div class="head__button">
-                <button >explorer nos restaurants</button>
+                <button class="button-ohMy">Explorer nos restaurants</button>
             </div>
             
         </div>
-        <nav class="head-nav" aria-label="Head">
-            <ul class="head-nav__list">
-                <li class="head-nav__item">
-                    <a href="#" class="head-nav__link">
-                        <span class="button__prepend">1</span>
-                        <span class="button__append"><i class="fa-solid fa-mobile-screen-button"></i></span>
-                        <span class="button__body">Choisissez un restaurant</span>
-                    </a>
+        <nav class="nav" >
+            <h1>Fonctionnement</h1>
+            <ul class="nav__list dispFlex flowColumn">
+
+                <li class="nav__item">
+                    
+                        <span class="nav__prepend">1</span>
+                        <span class="nav__append"><i class="fa-solid fa-mobile-screen-button fa-lg"></i></span>
+                        <span class="nav__body">Choisissez un restaurant</span>
+                    
                 </li>
-                <li class="head-nav__item">
-                    <a href="#" class="head-nav__link">
-                        <span class="button__prepend">2</span>
-                        <span class="button__append"><i class="fa-solid fa-list-ul"></i></span>
-                        <span class="button__body">Composez votre menu</span>
-                    </a>
+                <li class="nav__item">
+                    
+                        <span class="nav__prepend">2</span>
+                        <span class="nav__append"><i class="fa-solid fa-list-ul fa-lg"></i></span>
+                        <span class="nav__body">Composez votre menu</span>
+                    
                 </li>
-                <li class="head-nav__item">
-                    <a href="#" class="head-nav__link">
-                        <span class="button__prepend">3</span>
-                        <span class="button__append"><i class="fa-solid fa-store"></i></span>
-                        <span class="button__body">Dégustez au restaurant</span>
-                    </a>
+                <li class="nav__item">
+                    
+                        <span class="nav__prepend">3</span>
+                        <span class="nav__append"><i class="fa-solid fa-store fa-lg"></i></span>
+                        <span class="nav__body">Dégustez au restaurant</span>
+                    
                 </li>
             </ul>
           </nav>
     </header>
                                              <!--MAIN-->
     <main>
-        <div class="main__conteneur">
-            <h1>restaurant</h1>
+        <div class="main__conteneur dispFlex flowColumn">
+            <h1>Restaurants</h1>
             <div class="main__restaurant">
                 <a href="#">
                     <article class="card">
@@ -160,8 +162,8 @@
     </main>
 
                                                                     <!--FOOTER-->
-    <footer class="bg-black">
-        <div class="footer">
+    <footer>
+        <div class="footer dispFlex flowColumn">
             <div class="footer__logo">
                 <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood vectorielle">
             </div>
@@ -174,7 +176,7 @@
                     </li>
                     <li>    
                         <a href="#">
-                            <p><i class="fa-solid fa-handshake"></i></i>Devenir partenair</p>
+                            <p><i class="fa-solid fa-handshake handshakeTransform"></i></i>Devenir partenaire</p>
                         </a>
                     </li>
                     <li>    
