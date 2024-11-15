@@ -1,23 +1,62 @@
-img{
-   
-    
+@use "../sass-utils/variables";
 
+a {
+    color: inherit;
+    text-decoration: none;
 }
 figure{
     margin: 0;
 }
 .main__conteneur {
     margin: 20px;
-}
-
-.card{
-    height: 250px;
-    display: flex;
     
 }
+.main__restaurant{
+    gap: 20px;
+}
+.card{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+
+}
+
 figure{
     img{
+        
         width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+
+        
     }
 }
+.card__figure{
+    position: relative;
+    
+
+    .card__new{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        color: variables.$greenStrongColor;
+        background-color: variables.$greenLightColor;
+    }
+}
+.card_text{
+    padding: 20px;
+
+    h2 {
+        margin: 0;
+        font-size: 18px;
+        
+    }
+    p{
+        margin:  10px 0 0 0 ;
+    }
+}
+
+

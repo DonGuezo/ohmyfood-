@@ -3,22 +3,25 @@
 
 
 
-@import "sass-utils/variables";
+@use "sass-utils/variables";
+@use "sass-utils/mixins";
 
-@import "base/normalize.scss";
-@import "base/font.scss";
+@use "base/normalize.scss";
+@use "base/font.scss";
 
-@import "components/button";
+@use "components/button";
+@use "components/loader";
 
-@import "layout/header";
-@import "layout/size";
-@import "layout/flex";
-@import "layout/navigation";
-@import "layout/main";
-@import "layout/footer.scss";
-
-
-
+@use "layout/header";
+@use "layout/size";
+@use "layout/flex";
+@use "layout/navigation";
+@use "layout/main";
+@use "layout/footer";
 
 
+@use "pages/_page.scss";
+
+
+@use "layout/_viewport.scss";
 

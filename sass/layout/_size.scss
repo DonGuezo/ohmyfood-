@@ -1,12 +1,14 @@
-.w100{
-    width: $size100;
+@use "../sass-utils/variables";
+
+.w-full{
+    width: variables.$size100;
 }
 .h100{
-    height: $size100;
+    height: variables.$size100;
 }
-.w100vw{
-    width: $size100vw;
+.w-fullvw{
+    width: variables.$size100vw;
 }
 .h100vh{
-    height: $size100vh;
+    height: variables.$size100vh;
 }

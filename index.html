@@ -26,12 +26,18 @@
 </head>
 
 <body>
+      <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    
     <header>
         <div class="head dispFlex alignCenter flowColumn">
             <div class="head-logo">
-                <img class="w100" src="assets/images/logo/ohmyfood.png" alt="ohmyfood gros logo">
+                <img class="w-full" src="assets/images/logo/ohmyfood.png" alt="ohmyfood gros logo">
             </div>
-            <div class="head-localisation w100 displayFlexFullCenter">
+            <div class="head-localisation w-full displayFlexFullCenter">
                 <div class="head-localisation__icone"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="head-localisation__ville">Paris, Belleville</div>
             </div>
@@ -49,6 +55,8 @@
             
         </div>
         <nav class="nav" >
+            <div class="max-width">
+                
             <h1>Fonctionnement</h1>
             <ul class="nav__list dispFlex flowColumn">
 
@@ -74,14 +82,16 @@
                     
                 </li>
             </ul>
-          </nav>
+          
+            </div>
+        </nav>
     </header>
                                              <!--MAIN-->
     <main>
-        <div class="main__conteneur dispFlex flowColumn">
+        <div class="main__conteneur ">
             <h1>Restaurants</h1>
-            <div class="main__restaurant">
-                <a href="#">
+            <div class="main__restaurant dispFlex flowColumn">
+                <a href="restaurants/la-palette-du-gout.html">
                     <article class="card">
                         <aside class="card__aside">
                             <figure class="card__figure">
@@ -89,18 +99,24 @@
                                 <figcaption class="card__new">Nouveau</figcaption>
                             </figure>
                         </aside>
-                        <header class="card__header">
-                            <h2 class="card__title">La palette du gout</h2>
-                            <h3 class="card__subtitle">Ménilmontant</h3>
-                        </header>
-                        <footer class="card__footer">
-                            <div class="card__actions">
-                                <button class="button"><i class="fa-regular fa-heart"></i></button>
-                            </div>
-                        </footer>
+                        <div class="card_text dispFlex spaceBetween">
+                            <header class="card__header">
+                                <h2 class="card__title">La palette du gout</h2>
+                                <p class="card__subtitle">Ménilmontant</p>
+                            </header>
+                            <footer class="card__footer displayFlexFullCenter">
+                                <div class="card__actions">
+                                    <span class="button ">
+                                        <i class="fa-regular fa-heart fa-2xl"></i>
+                                        <i class="fa-solid fa-heart fa-2xl"></i>
+                                    </span>
+                                    
+                                </div>
+                            </footer>
+                        </div>    
                     </article>
                 </a>
-                <a href="#">
+                <a href="restaurants/la-note-enchantee.html">
                     <article class="card">
                         <aside class="card__aside">
                             <figure class="card__figure">
@@ -108,52 +124,67 @@
                                 <figcaption class="card__new">Nouveau</figcaption>
                             </figure>
                         </aside>
-                        <header class="card__header">
-                            <h2 class="card__title">La note enchantée</h2>
-                            <h3 class="card__subtitle">Charonne</h3>
-                        </header>
-                        <footer class="card__footer">
-                            <div class="card__actions">
+                        <div class="card_text dispFlex spaceBetween">
+                            <header class="card__header">
+                                <h2 class="card__title">La note enchantée</h2>
+                                <p class="card__subtitle">Charonne</p>
+                            </header>
+                            <footer class="card__footer displayFlexFullCenter">
+                                <div class="card__actions">
                                 <!-- remplacer button par div  pour animation du coeur?-->
-                                <span class="button"><i class="fa-regular fa-heart"></i></span>
-                            </div>
-                        </footer>
+                                <span class="button">
+                                    <i class="fa-regular fa-heart fa-2xl"></i>
+                                    <i class="fa-solid fa-heart fa-2xl"></i>
+                                </span>
+                                </div>
+                            </footer>
+                        </div>    
                     </article>
                 </a>
-                <a href="#">
-                    <article class="card">
+                <a href="restaurants/a-la-francaise.html">
+                    <article class="card dispFlex flowColumn">
                         <aside class="card__aside">
                             <figure class="card__figure">
                                 <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="À la française " class="card__image">
                             </figure>
                         </aside>
-                        <header class="card__header">
-                            <h2 class="card__title">À la française</h2>
-                            <h3 class="card__subtitle">Cité rouge</h3>
-                        </header>
-                    <footer class="card__footer">
-                        <div class="card__actions">
-                          <span class="button"><i class="fa-regular fa-heart"></i></span>
-                        </div>
-                      </footer>
+                        <div class="card_text dispFlex spaceBetween">
+                            <header class="card__header">
+                                <h2 class="card__title">À la française</h2>
+                                <p class="card__subtitle">Cité rouge</p>
+                            </header>
+                        <footer class="card__footer displayFlexFullCenter">
+                            <div class="card__actions">
+                            <span class="button">
+                                <i class="fa-regular fa-heart fa-2xl"></i>
+                                <i class="fa-solid fa-heart fa-2xl"></i>
+                            </span>
+                            </div>
+                        </footer>
+                    </div>
                     </article>
                 </a>
-                <a href="#">
+                <a href="restaurants/le-delice-des-sens.html">
                     <article class="card">
                         <aside class="card__aside">
                             <figure class="card__figure">
                                 <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du gout " class="card__image">
                             </figure>
                         </aside>
-                        <header class="card__header">
-                            <h2 class="card__title">Le délice des sens</h2>
-                            <h3 class="card__subtitle">Folie Méricourt</h3>
-                        </header>
-                    <footer class="card__footer">
-                        <div class="card__actions">
-                          <span class="button"><i class="fa-regular fa-heart"></i></span>
-                        </div>
-                      </footer>
+                        <div class="card_text dispFlex spaceBetween">
+                            <header class="card__header">
+                                <h2 class="card__title">Le délice des sens</h2>
+                                <p class="card__subtitle">Folie Méricourt</p>
+                            </header>
+                            <footer class="card__footer displayFlexFullCenter">
+                                <div class="card__actions">
+                                <span class="button">
+                                    <i class="fa-regular fa-heart fa-2xl"></i>
+                                    <i class="fa-solid fa-heart fa-2xl"></i>
+                                </span>
+                                </div>
+                            </footer>
+                        </div>    
                     </article>
                 </a>
             </div>
@@ -165,7 +196,7 @@
     <footer>
         <div class="footer dispFlex flowColumn">
             <div class="footer__logo">
-                <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood vectorielle">
+                <h2>ohmyfood</h2>
             </div>
             <div class="footer__mention">
                 <ol>
@@ -185,7 +216,7 @@
                         </a>
                     </li>
                     <li>    
-                        <a href="#">
+                        <a href="mailto:david.guezo@gmail.com">
                             <p>Contact</p>
                         </a>
                     </li>

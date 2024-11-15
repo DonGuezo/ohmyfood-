@@ -8,6 +8,12 @@
 .alignCenter{
     align-items: center;
 }
+.spaceBetween{
+    justify-content: space-between;
+}
+.spaceAround{
+    justify-content: space-around;
+}
 .displayFlexFullCenter{
     display: flex;
     justify-content: center;

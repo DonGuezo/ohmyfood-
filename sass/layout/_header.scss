@@ -1,5 +1,7 @@
+@use "../sass-utils/variables";
+
 body{
-    background-color: $lightBgColor;
+    background-color: variables.$lightBgColor;
 }
 
 .head{
@@ -7,14 +9,24 @@ body{
 }
 
 .head-logo{
-    width: 200px;
-    margin: 20px 0;
+    
+    padding: 20px 0;
+
+    .returnArrow{
+        
+        padding: 20px;
+    }
+    img {
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
     
 }
 
 .head-localisation{
     height: 50px;
-    background-color: $strongBgColor;
+    background-color: variables.$strongBgColor;
     gap: 20px;
     box-shadow: 0px 4px 4px 0px #00000040;
 
@@ -25,10 +37,16 @@ body{
 .head__title{
     width: 275px;
     height: 70px;
+    text-align: center;
 }
 .head__info{
     width: 315px;
     text-align: center;
+    
+    p{
+        margin-top: 0;
+    }
+    
 }
 .head__button{
   
