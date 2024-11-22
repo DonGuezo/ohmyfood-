@@ -345,6 +345,13 @@ h1 {
   display: block;
 }
 
+/* checkbox */
+.logo-check {
+  background-color: #008766;
+  padding: 10px;
+  color: white;
+}
+
 .loader-container {
   position: fixed;
   top: 0;
@@ -669,6 +676,77 @@ footer .footer h2 {
   gap: 20px;
   animation: slideIn 5s;
 }
+.page__card__title {
+  position: relative;
+  margin-top: 40px;
+}
+.page__card__title p {
+  margin-bottom: 5px;
+}
+.page__card__title ::after {
+  content: "";
+  background: #99E2D0;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-top: 5px;
+}
+.page__card__plate {
+  background-color: white;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  height: 75px;
+  gap: 5px;
+  overflow: hidden;
+}
+.page__card__plate--description {
+  padding: 15px;
+  overflow: hidden;
+}
+.page__card__plate--name {
+  margin: 0;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.page__card__plate--info {
+  margin: 0;
+  padding: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.page__card__plate--content {
+  align-items: end;
+  gap: 20px;
+}
+.page__card__plate--price {
+  padding-bottom: 15px;
+}
+.page__card__plate--button {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s, width 1s;
+  background-color: #99E2D0;
+  height: 100%;
+  min-height: 40px;
+}
+.page__card__plate--button .fa-check {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.page__card__plate:hover .page__card__plate--button {
+  transition: opacity 1s, visibility 1s, width 1s;
+  opacity: 1;
+  visibility: visible;
+  width: 80px;
+  height: 100%;
+}
 
 @keyframes slideIn {
   from {
@@ -706,41 +784,12 @@ footer .footer h2 {
     transform: translateY(0);
   }
 }
-.page__card__title {
-  position: relative;
-  margin-top: 40px;
-}
-.page__card__title p {
-  margin-bottom: 5px;
-}
-.page__card__title ::after {
-  content: "";
-  background: #99E2D0;
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  margin-top: 5px;
-}
-
-.page__card__plate {
-  background-color: white;
-  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
-  border-radius: 15px;
-  padding: 0 15px;
-  gap: 5px;
-}
-
-.price:hover {
-  display: none;
-}
-
 .page__button--command {
-  padding: 20px;
+  margin-top: 20px;
 }
-.page__button--command button {
-  padding: 20px 50px;
+.page__button--command .button-ohMy {
+  width: 180px;
+  justify-content: center;
 }
 
 /* big devices (desktop) */
