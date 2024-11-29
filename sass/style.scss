@@ -5,6 +5,8 @@
 
 @use "sass-utils/variables";
 @use "sass-utils/mixins";
+@use "sass-utils/flex";
+@use "sass-utils/size";
 
 @use "base/normalize.scss";
 @use "base/font.scss";
@@ -13,14 +15,15 @@
 @use "components/loader";
 
 @use "layout/header";
-@use "layout/size";
-@use "layout/flex";
+
+
 @use "layout/navigation";
 @use "layout/main";
 @use "layout/footer";
 
 
 @use "pages/_page.scss";
+@use "pages/acceuil";
 
 
 @use "layout/_viewport.scss";

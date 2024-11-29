@@ -60,6 +60,7 @@
         height: 75px;
         gap: 5px;        
         overflow: hidden;
+        cursor: pointer;
 
         &--description{
             padding: 15px;
@@ -109,6 +110,7 @@
             visibility: visible;
             width: 80px;
             height: 100%;
+            
         }
             
     }
@@ -126,11 +128,11 @@
     }
 }
 .page__card:nth-child(odd){
-    animation: slideSideY 5s;
+    animation: slideSideY 3s;
 
 }
 .page__card:nth-child(even){
-    animation: slideSideX 5s ;
+    animation: slideSideX 3s;
 
 }
 @keyframes slideSideY {
