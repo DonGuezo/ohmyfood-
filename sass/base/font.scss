@@ -1,0 +1,10 @@
+@use "../sass-utils/variables";
+
+* {
+    font-family: variables.$fontRoboto;
+}
+
+h1{
+    font-size: 24px;
+    
+}

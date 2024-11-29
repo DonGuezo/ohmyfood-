@@ -1,0 +1,16 @@
+
+@mixin heart{
+    content: '\f004';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+}
+
+@mixin heart-solid{
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    opacity: 0;
+    cursor: pointer;
+}

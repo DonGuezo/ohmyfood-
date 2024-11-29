@@ -1,0 +1,41 @@
+@use "../sass-utils/variables";
+
+.button-ohMy {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border-radius: 20em;
+  
+   
+    
+      &:hover {
+        box-shadow: inset 100px 100px 100px rgba(255,255,255,0.1), 0 0.5em 1.5em -0.5em variables.$purpleLightColor;
+    
+   
+    
+  }
+  
+      &:active {
+          box-shadow: 0 0.3em 1em -0.5em variables.$purpleLightColor;
+        }
+  }
+
+.button{
+  .fa-solid{
+    display: none;
+    color: variables.$purpleLightColor
+  }
+}
+
+.button:hover{
+  .fa-regular{
+    display: none;
+  }
+  .fa-solid{
+    display: block;
+  }
+}
