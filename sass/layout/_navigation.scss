@@ -19,6 +19,14 @@ nav{
     display: flex;
     align-items: center;
     gap: 30px;
+
+    &:hover .fa-solid{
+        color: variables.$purpleColor;
+    }
+
+
+
+
 }
 .nav__prepend{
     margin: 0 0 0 -30px;
