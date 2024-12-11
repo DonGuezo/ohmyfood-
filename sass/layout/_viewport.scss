@@ -11,10 +11,16 @@
     }
 
     .side__page__conteneur{
-        max-width: 1024px;
+        max-width: 500px;
         width: 100%;
+        padding: 40px 200px;
     }
-
+    .side__page__title {
+        justify-content: center;
+        gap: 30px;
+        
+      
+    }
     .head__title {
         text-align: center;
         width: 100%;

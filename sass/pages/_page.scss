@@ -2,16 +2,20 @@
 
 
 
-
 .head__img img{
     height: 275px;
     width: 100%;
     object-fit: cover;
 }
 
+.pages--background{
+    background-color: white;
+}
+
 .side__page__conteneur{
     transform: translateY(-40px);
     padding: 20px;
+    margin-bottom: -40px;
     background-color: variables.$lightBgColor;
     border-radius: 40px 40px 0 0;
 
@@ -117,6 +121,8 @@
    
     
 }
+
+/* animation de la page */
 
 
 @keyframes slideIn {
