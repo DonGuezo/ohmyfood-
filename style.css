@@ -394,7 +394,6 @@ h1 {
 }
 .button .fa-solid {
   display: none;
-  color: #FF79DA;
 }
 
 .button:hover .fa-regular {
@@ -403,6 +402,12 @@ h1 {
 .button:hover .fa-solid {
   display: block;
   animation: slideIn 2s;
+}
+
+.heart--selected::before {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .loader-container {
