@@ -402,7 +402,7 @@ h1 {
 }
 .button:hover .fa-solid {
   display: block;
-  animation: slideIn s;
+  animation: slideIn 2s;
 }
 
 .loader-container {
@@ -754,12 +754,21 @@ footer .footer h2 {
 }
 
 /* animation de la page */
-.page__card:nth-child(odd) {
-  animation: slideSideY 3s;
+.page__card {
+  opacity: 0;
+  animation: slideSideX 2s ease forwards;
 }
 
-.page__card:nth-child(even) {
-  animation: slideSideX 3s;
+.page__card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.page__card:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.page__card:nth-child(4) {
+  animation-delay: 5s;
 }
 
 @keyframes slideSideY {

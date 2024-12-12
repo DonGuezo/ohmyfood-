@@ -38,6 +38,7 @@
   .fa-solid{
     display: none;
     color: variables.$purpleLightColor;
+    
   }
 }
 
@@ -50,7 +51,7 @@
   }
   .fa-solid{
     display: block;
-    animation: slideIn s;
+    animation: slideIn 2s;
     
   }
 }
