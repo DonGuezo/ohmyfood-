@@ -94,26 +94,27 @@
             padding-bottom: 15px;
         }
         &--button{
-            width: 0;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 1s, visibility 1s, width 1s;
+            margin-right: -60px;
             background-color: variables.$greenLightColor;
             height: 100%;
-            min-height: 40px;
+            width: 60px;
+            
+            transition: margin 1s ease;
 
             .fa-check{
                 background-color: white;
                 border-radius: 50%;
                 padding: 5px;
+                color: variables.$greenLightColor;
+                
             }
         }
         &:hover .page__card__plate--button{
-            transition: opacity 1s, visibility 1s, width 1s;
-            opacity: 1;
-            visibility: visible;
-            width: 80px;
-            height: 100%;
+          
+
+           
+            margin-right: 0;
+           
             
         }
             
@@ -125,14 +126,7 @@
 /* animation de la page */
 
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 .page__card:nth-child(odd){
     animation: slideSideY 3s;
 

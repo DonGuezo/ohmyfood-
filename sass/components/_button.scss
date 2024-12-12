@@ -26,20 +26,32 @@
 
 
 /* coeurs solid regular */  
-
+@keyframes slideIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 .button{
   .fa-solid{
     display: none;
-    color: variables.$purpleLightColor
+    color: variables.$purpleLightColor;
   }
 }
 
 .button:hover{
   .fa-regular{
     display: none;
+    
+    
+    
   }
   .fa-solid{
     display: block;
+    animation: slideIn s;
+    
   }
 }
 
