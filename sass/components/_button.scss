@@ -34,27 +34,33 @@
       opacity: 1;
   }
 }
-.button{
+
+.button {
+
   .fa-solid{
     display: none;
-    color: variables.$purpleLightColor;
-    
+       
   }
+    
 }
 
-.button:hover{
+.button:hover {
   .fa-regular{
     display: none;
-    
-    
-    
   }
   .fa-solid{
     display: block;
     animation: slideIn 2s;
-    
   }
+  
 }
+.heart--selected::before {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+
+}
+
 
 
 
